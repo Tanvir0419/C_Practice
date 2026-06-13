@@ -95,4 +95,7 @@ x++ to increment x by one AFTER it is used (same for decrement)
 ## 7. Relational & Conditional Operators
 >, >=, <, <=, ==, !=
 
-Conditional control statement (if/else) start from 5.67
+## 8. Conditional control statement (if/else)
+if, else statement should be inside{} for not rechecking below if condition is already met.
+
+
