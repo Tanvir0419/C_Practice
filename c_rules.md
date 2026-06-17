@@ -29,7 +29,7 @@ printf("Enter a number: ");
 scanf("%d", &num);
 printf("You've pressed %d", num);
 
-Input for multiple words using gets:
+Input for multiple words using gets(unsafe):
 char name[50];
 printf("Enter your name:");
 gets(name);
@@ -42,17 +42,17 @@ gets(name);
 printf("Hello,");
 puts(name);
 
-Using fgets for defining exactly how many characters:
+Using fgets(safe) for defining exactly how many characters:
 char name[50];
 printf("Enter your name:");
 fgets(name, sizeof(name), stdin);
 printf("Hello,%s", name);
 
-getchar for single response by a word:
-char word;
-printf("Enter a word:");
-word = getchar();
-printf("You've entered:%c", word);
+getchar for single response by a character:
+char character;
+printf("Enter a character :");
+character = getchar();
+printf("You've entered:%c", character);
 
 putchar:
 char word;
