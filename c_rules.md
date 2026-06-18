@@ -4,6 +4,8 @@
 * For single line comment: `//`
 * For multiple line comment: `/*` for starting and `*/` for ending
 * `\n` for new line
+* `\t` for space
+* Quote inside double quotation= ("Hello \\"World\\"");
 
 ## 2. Character Types
 * `char (%c)` - (1 byte) - a, b, 1, 2
@@ -27,13 +29,13 @@ printf("Enter a number: ");
 scanf("%d", &num);
 printf("You've pressed %d", num);
 
-Input for multiple words using gets:
+Input for multiple words using gets (unsafe):
 char name[50];
 printf("Enter your name:");
 gets(name);
 printf("Hello,%s",name);
 
-Using puts:
+Using puts (unsafe):
 char name[50];
 printf("Enter your name:");
 gets(name);
@@ -46,18 +48,18 @@ printf("Enter your name:");
 fgets(name, sizeof(name), stdin);
 printf("Hello,%s", name);
 
-getchar for single response by a word:
-char word;
-printf("Enter a word:");
-word = getchar();
-printf("You've entered:%c", word);
+getchar for single response by a character (input):
+char character;
+printf("Enter a character:");
+character = getchar();
+printf("You've entered:%c", character);
 
-putchar:
-char word;
-printf("Enter a word:");
-word = getchar();
+putchar (output):
+char character;
+printf("Enter a character:");
+character = getchar();
 printf("You've entered:");
-putchar(word);
+putchar(character);
 ```
 
 ## 5. Arithmetic & Math Operators
@@ -94,6 +96,7 @@ x++ to increment x by one AFTER it is used (same for decrement)
 
 ## 7. Relational & Conditional Operators
 * >,>=,<,<=,==,!=
+* ?,:
 * if, else statement should be inside{} for not rechecking below if condition is already met.
 * switch keyword: switch, case, break, default
 
@@ -101,5 +104,11 @@ x++ to increment x by one AFTER it is used (same for decrement)
 && = Logical AND
 || = Logical OR
 !  = Logical NOT
+
+## 9. Switch
+* Expression used in switch must be inegral type
+* Until a break statement is reached all the case will be execute
+* Default block can be placed anywhere
+* the statement written above cases are never executed
 
 
