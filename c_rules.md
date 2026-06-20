@@ -24,44 +24,44 @@
 
 ## 4. Input & Output Functions
 - [TRAP] Always use the address-of operator (&) inside scanf for standard variables. Forgetting it causes a silent runtime crash
-- To ask a question or input an integer:
 
 ```c
+- To ask a question or input an integer:
 int num;
-printf("Enter a number: ");
+    printf("Enter a number: ");
 scanf("%d", &num);
-printf("You've pressed %d", num);
+    printf("You've pressed %d", num);
 
 - Input for multiple words using gets (unsafe):
 char name[50];
-printf("Enter your name:");
+    printf("Enter your name:");
 gets(name);
-printf("Hello,%s",name);
+    printf("Hello,%s",name);
 
 - Using puts (unsafe):
 char name[50];
-printf("Enter your name:");
+    printf("Enter your name:");
 gets(name);
-printf("Hello,");
+    printf("Hello,");
 puts(name);
 
 - Using fgets(safe) for defining character limitation:
 char name[50];
-printf("Enter your name:");
+    printf("Enter your name:");
 fgets(name, sizeof(name), stdin);
-printf("Hello,%s", name);
+    printf("Hello,%s", name);
 
 - getchar for single response by a character (input):
 char character;
-printf("Enter a character:");
+    printf("Enter a character:");
 character = getchar();
-printf("You've entered:%c", character);
+    printf("You've entered:%c", character);
 
 - putchar (output):
 char character;
-printf("Enter a character:");
+    printf("Enter a character:");
 character = getchar();
-printf("You've entered:");
+    printf("You've entered:");
 putchar(character);
 ```
 
@@ -113,6 +113,57 @@ putchar(character);
 - '~' = Bitwise NOT
 - '<<' = Left shift
 - '>>' = Right shift
+
+## 11.Loop
+- [Trap] dont confuse between ; and ' inside loop function. always use ;
+- for continuous lopp use while(1). 1 means true.
+```c
+- for
+int i;
+for(i=1;i<=5;i++)
+{
+    printf("%d",i);
+}
+
+- while
+int i=1;
+while(i<=5)
+{
+    printf("%d",i);
+    i++;
+}
+
+- do while
+int i=1;
+do
+{
+    printf("%d",i);
+    i++;
+}
+while(i<=5);
+```
+## 12.Statement
+```c
+- break and continue statement
+int i;
+for(i=1;i<20;i++)
+{
+if(i%3==0)
+    continue;
+    printf("%d",i);
+if(i==10)
+break;
+}
+
+- goto statement
+int i=1;
+starting:
+    printf("%d",i);
+    i++;
+if(i<5)
+    goto starting;
+
+
 
 
 
