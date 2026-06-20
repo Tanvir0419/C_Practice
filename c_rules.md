@@ -89,7 +89,7 @@ putchar(character);
 - x++ to increment x by one AFTER it is used (same for decrement)
 
 ## 7. Relational & Conditional Operators
-- '>','>=','<','<'=,'==','!='
+- '>', '>=', '<', '<'=, '==', '!='
 - ?(if true), :(else)
 - if, else statement should be inside{} for not rechecking below if condition is already met.
 
@@ -101,8 +101,8 @@ putchar(character);
 - the statement written above cases are never executed
 
 ## 9. Logical Operator
-- '&&' = Logical AND
-- '||' = Logical OR
+- '&&' = Logical AND (Both side must be true)
+- '||' = Logical OR (Atleast one side must be true)
 - '!'  = Logical NOT
 - [TRAP] Short-Circuiting: In (A && B), if A is False, C skips B entirely. In (A || B), if A is True, C skips B entirely
 
