@@ -10,15 +10,15 @@
 ## 2. Character Types
 - `char (%c)` - (1 byte) - a, b, 1, 2
 - `int (%d)` - (4 byte) - 1234
-- `float (%f)` - (4 byte) - 1.2345
-- `double (%lf)` - (8 byte) - 1.23456789
+- `float (%f)` - (4 byte) - 1.2345 (upto 6 digit after decimal point)
+- `double (%lf)` - (8 byte) - 1.23456789 (upto 15 digit after decimal point)
 - For exact 4 digits after decimal, we have to point out like this: `%.4f`
 
 ## 3. Variables
 - Keyword/function must be small letter and can't be used as variable name
 - For `char` data type, variable should be inside single quotes ` ' ' `
 - Variable name can't start from a digit (1number - X)
-- For variable name, only `$` and `_` is valid to use
+- For variable name, only `_` is valid to use
 - No gap space is allowed in a variable name
 - [TRAP] Always initialize variables (e.g., int sum = 0;). If you leave it blank, C assigns random "garbage" memory values and ruins your math
 
