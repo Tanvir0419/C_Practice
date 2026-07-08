@@ -71,7 +71,7 @@ putchar(character);
 - Use %x for hex and %o for octal
 - % is for leftover (modulus)
 
-- Absolute: abs
+- Absolute: fabs
 - Square root: sqrt
 - Log: log
 - Exponential: exp

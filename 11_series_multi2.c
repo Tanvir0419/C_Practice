@@ -1,3 +1,4 @@
+// 1*2 + 2*3 + 3*4 +....+ n1*n2
 #include <stdio.h>
 int main()
 {
@@ -10,5 +11,5 @@ int main()
         a++;
         b++;
     }
-    printf("1*2+2*3+3*4+....+%d*%d=%d", n1, n2, sum);
+    printf("Sum=%d", sum);
 }
