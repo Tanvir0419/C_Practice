@@ -12,7 +12,8 @@
 - `int (%d)` - (4 byte) - 1234
 - `float (%f)` - (4 byte) - 1.2345 (upto 6 digit after decimal point)
 - `double (%lf)` - (8 byte) - 1.23456789 (upto 15 digit after decimal point)
-- For exact 4 digits after decimal, we have to point out like this: `%.4f`
+- For exact 4 digits after decimal, we have to point out like this: `%.4f` .[not like '%.4fl']
+- `long long (%lld)` - for long number
 
 ## 3. Variables
 - Keyword/function must be small letter and can't be used as variable name
@@ -118,6 +119,8 @@ putchar(character);
 - [Trap] dont confuse between ; and ' inside loop function. always use ;
 - Palindrome number= result same as main number
 - Armstrong number = result each digit^3 same as main number
+- Break can be used in loop
+- Continue is also used in loop(skip the current iteration)
 - for continuous lopp use while(1). 1 means true.
 ```c
 - for
