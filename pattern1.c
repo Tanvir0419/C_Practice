@@ -29,5 +29,14 @@ int main()
         }
         printf("\n");
     }
+    ///////////////////////////////////////////
+    for (row = n - 1; row >= 1; row--)
+    {
+        for (col = 1; col <= row; col++)
+        {
+            printf("%d ", col);
+        }
+        printf("\n");
+    }
     return 0;
 }

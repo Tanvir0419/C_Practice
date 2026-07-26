@@ -1,29 +1,22 @@
+/*
+for  floyd's triangle
+1
+2 3
+4 5 6
+7 8 9 10
+printf("%d",++count)
+if 0 is needed then count++
+*/
 #include <stdio.h>
 int main()
 {
     int n, row, col;
     scanf("%d", &n);
-    for (row = 1; row <= n; row++) // descending
+    for (row = 1; row <= n; row++)
     {
-        for (col = 1; col <= n - row; col++) // space before
+        for (col = 1; col <= row; col++)
         {
-            printf(" ");
-        }
-        for (col = 1; col <= row; col++) // letter after space
-        {
-            printf("%d", col);
-        }
-        printf("\n");
-    }
-    for (row = n - 1; row >= 1; row--) // ascending
-    {
-        for (col = 1; col <= n - row; col++) // space before
-        {
-            printf(" ");
-        }
-        for (col = 1; col <= row; col++) // letter after space
-        {
-            printf("%d", col);
+            printf("%d ", row * col);
         }
         printf("\n");
     }
