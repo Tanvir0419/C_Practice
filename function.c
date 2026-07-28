@@ -2,10 +2,9 @@
 double calculatepower(double base, double exp);
 int main()
 {
-    double base, exp, result;
+    double base, exp;
     scanf("%lf %lf", &base, &exp);
-    result = calculatepower(base, exp);
-    printf("%.2lf\n", result);
+    printf("%.2lf\n", calculatepower(base, exp));
     return 0;
 }
 
