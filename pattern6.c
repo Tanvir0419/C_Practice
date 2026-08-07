@@ -1,4 +1,9 @@
 /*
+*****
+*   *
+*   *
+*   *
+*****
 for triangle
 if (row == n || col == 1 || row == col)
 for cross

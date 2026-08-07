@@ -1,4 +1,11 @@
 /*
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
 for space between asterics
 for (col = 1; col <= row; col++)
 */
