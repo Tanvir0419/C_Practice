@@ -20,8 +20,8 @@ int main()
             }
         }
     }
-    if (count == 0)
-        printf("%d is a prime number", num);
+    if (count > 0)
+        printf("%d is a not prime number", num);
     else
-        printf("%d is not a prime number", num);
+        printf("%d is a prime number", num);
 }
