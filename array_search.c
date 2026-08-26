@@ -1,20 +1,34 @@
 #include <stdio.h>
 int main()
 {
-    int num[] = {1, 4, 3, 2, 1}, n, i, found = 0;
-    printf("Searching number: ");
+    int arr[100], n, f, position = -1;
+    printf("How many elements: ");
     scanf("%d", &n);
-    for (i = 0; i <= 4; i++)
+
+    for (int i = 0; i < n; i++)
     {
-        if (n == num[i])
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Which element you want to find: ");
+    scanf("%d", &f);
+
+    for (int i = 0; i < n; i++)
+    {
+        if (f == arr[i])
         {
-            printf("Found in %d position\n", i);
-            found = 1;
+            position = i + 1;
+            break;
         }
     }
-    if (found == 0)
+
+    if (position != -1)
     {
-        printf("Not Found\n");
+        printf("Found in position %d\n", position);
+    }
+    else
+    {
+        printf("Not found\n");
     }
     return 0;
 }
