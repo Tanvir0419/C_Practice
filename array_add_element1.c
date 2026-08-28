@@ -5,7 +5,7 @@ int main()
     printf("How many elements: ");
     scanf("%d", &n);
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i <= n - 1; i++)
     {
         scanf("%d", &arr[i]);
     }
@@ -24,7 +24,7 @@ int main()
     arr[p - 1] = x;
     n++;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i <= n - 1; i++)
     {
         printf("%d ", arr[i]);
     }

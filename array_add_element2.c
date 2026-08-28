@@ -5,7 +5,7 @@ int main()
     printf("Which element to add: ");
     scanf("%d", &x);
     p = n + 1; // if the new element is bigger than all other element then it will move to last position
-    for (int i = 0; i <= 4; i++)
+    for (int i = 0; i <= n - 1; i++)
     {
         if (x < arr[i])
         {
@@ -22,7 +22,7 @@ int main()
     arr[p - 1] = x;
     n++;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i <= n - 1; i++)
     {
         printf("%d ", arr[i]);
     }
