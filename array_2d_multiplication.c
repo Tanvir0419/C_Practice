@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int mat1[10][10], mat2[10][10], mat3[10][10] = 0, r1, r2, c1, c2;
+    int mat1[10][10], mat2[10][10], mat3[10][10], r1, r2, c1, c2;
     printf("Enter row and column for 1st matrix: ");
     scanf("%d%d", &r1, &c1);
     printf("Enter row and column for 2nd matrix: ");
