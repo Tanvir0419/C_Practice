@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 int main()
 {
     int arr[10][10], n, max, min, max2;
-
     printf("Enter the number of rows and columns: ");
     scanf("%d", &n);
 
@@ -36,6 +34,7 @@ int main()
     printf("Min: %d\n", min);
 
     max2 = min;
+
     for (int i = 0; i <= n - 1; i++)
     {
         for (int j = 0; j <= n - 1; j++)

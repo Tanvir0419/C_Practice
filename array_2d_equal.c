@@ -22,6 +22,7 @@ int main()
             scanf("%d", &mat2[i][j]);
         }
     }
+
     if (r1 != r2 || c1 != c2)
     {
         equal = 0;
