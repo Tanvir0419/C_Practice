@@ -1,16 +1,16 @@
 #include <stdio.h>
-double calculatepower(double base, double exp);
+float power(float base, float exp);
 int main()
 {
-    double base, exp;
-    scanf("%lf %lf", &base, &exp);
-    printf("%.2lf\n", calculatepower(base, exp));
+    float base, exp;
+    scanf("%f %f", &base, &exp);
+    printf("%.2f\n", power(base, exp));
     return 0;
 }
 
-double calculatepower(double base, double exp)
+float power(float base, float exp)
 {
-    double result = 1;
+    float result = 1;
     for (int i = 1; i <= exp; i++)
     {
         result = result * base;
