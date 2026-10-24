@@ -51,13 +51,13 @@ int main()
             }
         }
     }
-    if ((n - 1) % 2 == 0) // n is odd
+    if (n % 2 == 0)
     {
-        median = arr[n / 2];
+        median = (arr[n / 2 - 1] + arr[n / 2]) / 2.0;
     }
     else
     {
-        median = (arr[n / 2] + arr[n / 2 - 1]) / 2.0; // n is even
+        median = arr[n / 2];
     }
     printf("%.2f is median\n", median);
     return 0;
