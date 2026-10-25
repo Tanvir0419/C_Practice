@@ -1,27 +1,31 @@
 #include <stdio.h>
 #include <math.h>
+
+int isFun(int num);
+
 int main()
 {
-    int i, num, count = 0;
-    printf("Enter a number to check:");
-    scanf("%d", &num);
-    if (num <= 1)
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    for (int i = 2; i <= n; i++)
     {
-        count++;
+        if (isFun(i))
+            printf("%d ", i);
     }
-    else
+    return 0;
+}
+
+int isFun(int num)
+{
+    if (num < 2)
+        return 0;
+
+    for (int i = 2; i <= sqrt(num); i++)
     {
-        for (i = 2; i <= sqrt(num); i++)
-        {
-            if (num % i == 0)
-            {
-                count++;
-                break;
-            }
-        }
+        if (num % i == 0)
+            return 0;
     }
-    if (count > 0)
-        printf("%d is a not prime number", num);
-    else
-        printf("%d is a prime number", num);
+    return 1;
 }
